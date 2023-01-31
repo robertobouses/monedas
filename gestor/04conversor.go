@@ -5,8 +5,8 @@ import "fmt"
 var CantidadDivisa int
 
 func Conversor(Codigo1, Codigo2 int, InventarioMonedas map[int]Moneda) {
-	moneda, ok := InventarioMonedas[Codigo1]
-	fmt.Println(moneda)
+	_, ok := InventarioMonedas[Codigo1]
+	//fmt.Println(moneda)
 	if ok {
 
 		fmt.Printf("Indica que cantidad de la divisa a convertir %s tienes\n", InventarioMonedas[Codigo1].Nombre)
